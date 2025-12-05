@@ -8,7 +8,6 @@ import {
   GraduationCap, 
   Award, 
   Mail, 
-  Phone, 
   MapPin, 
   Calendar,
   FileText,
@@ -60,66 +59,109 @@ const timeline = [
     description: 'Completed doctoral research on classical Odia poetry and its cultural significance.'
   },
   {
-    year: '1995',
-    title: 'Assistant Professor',
-    institution: 'Ravenshaw University',
-    description: 'Began academic career teaching undergraduate courses in Odia literature.'
+    year: '',
+    title: 'Principal',
+    institution: 'OPS College, Odapada, Dhenkanal',
+    description: 'Served as Principal, leading the institution with academic excellence and administrative expertise.'
   },
   {
-    year: '2005',
-    title: 'Associate Professor',
-    institution: 'Ravenshaw University',
-    description: 'Promoted for excellence in teaching and research contributions.'
-  },
-  {
-    year: '2015',
-    title: 'Professor & Head of Department',
-    institution: 'Ravenshaw University',
-    description: 'Appointed as Professor and Head of Odia Literature Department.'
+    year: '',
+    title: 'Former Cultural Secretary',
+    institution: 'Sree Nilachal Nikhila Utkala Pala Gayaka Parishada',
+    description: 'Contributed to the promotion and preservation of Odia cultural heritage through Pala tradition.'
   },
 ]
 
 const publications = [
   {
-    title: 'The Evolution of Odia Poetry: A Critical Analysis',
+    title: 'Punya Parag',
     type: 'Book',
-    year: '2022',
-    description: 'Comprehensive study of Odia poetry from ancient to modern times.',
+    year: 'Student Life',
+    description: 'First literary work written during student life - the beginning of a prolific writing journey.',
     link: '#'
   },
   {
-    title: 'Sarala Das and the Odia Mahabharata',
-    type: 'Research Paper',
-    year: '2021',
-    description: 'Analysis of Sarala Das\'s contribution to Odia literary tradition.',
-    link: '#'
-  },
-  {
-    title: 'Folk Literature of Odisha: Traditions and Transformations',
+    title: 'Sahitya Sanskriti Sidhant',
     type: 'Book',
-    year: '2020',
-    description: 'Documentation and analysis of Odia folk literary traditions.',
+    year: '',
+    description: 'Comprehensive exploration of literary and cultural theories.',
     link: '#'
   },
   {
-    title: 'Modern Odia Fiction: Themes and Techniques',
-    type: 'Journal Article',
-    year: '2019',
-    description: 'Study of narrative techniques in contemporary Odia fiction.',
+    title: 'Ama Sahitya Ama Sanskruti',
+    type: 'Book',
+    year: '',
+    description: 'A deep dive into our literature and cultural heritage.',
     link: '#'
   },
   {
-    title: 'Bhakti Movement in Odia Literature',
-    type: 'Research Paper',
-    year: '2018',
-    description: 'Exploration of devotional literature and its impact on Odia culture.',
+    title: 'Odia Baishnava Rasa Sahitya Re Kabi Dinakrishna Oo Kabya Rasa Vinod',
+    type: 'Book',
+    year: '',
+    description: 'Study of Vaishnava Rasa literature and the poetic contributions of Kabi Dinakrishna.',
     link: '#'
   },
   {
-    title: 'Linguistic Heritage of Odisha',
-    type: 'Book Chapter',
-    year: '2017',
-    description: 'Contribution to edited volume on Indian linguistic diversity.',
+    title: 'Mahima Dharma Katha O Kahani',
+    type: 'Book',
+    year: '',
+    description: 'Stories and narratives from the Mahima Dharma tradition.',
+    link: '#'
+  },
+  {
+    title: 'Sri Jagannath Sahitya Sanskriti',
+    type: 'Book',
+    year: '',
+    description: 'Literature and culture centered around Lord Jagannath.',
+    link: '#'
+  },
+  {
+    title: 'Bhasa Bigyani Professor Golaka Bihari Dhal',
+    type: 'Book',
+    year: '',
+    description: 'Tribute to the renowned linguist Professor Golaka Bihari Dhal.',
+    link: '#'
+  },
+  {
+    title: 'Pala Pradeepa',
+    type: 'Edited',
+    year: '',
+    description: 'Edited volume illuminating the Pala tradition of Odisha.',
+    link: '#'
+  },
+  {
+    title: 'Gangadhara Sahitya Samikshya',
+    type: 'Edited',
+    year: '',
+    description: 'Critical analysis and review of Gangadhara\'s literary works.',
+    link: '#'
+  },
+  {
+    title: 'Pragya Prabandha O Parjyalochana',
+    type: 'Book',
+    year: '',
+    description: 'Essays and critical reviews on various literary subjects.',
+    link: '#'
+  },
+  {
+    title: 'Kanhu Charan Granthavali',
+    type: 'Edited',
+    year: 'Latest',
+    description: 'Complete edited collection of Kanhu Charan\'s works.',
+    link: '#'
+  },
+  {
+    title: 'Pranika Hite Bhagavata',
+    type: 'Edited',
+    year: '',
+    description: 'Edited work on Bhagavata with focus on animal welfare themes.',
+    link: '#'
+  },
+  {
+    title: 'Odia Sahityare Kabi Dinakrishna',
+    type: 'Book',
+    year: '',
+    description: 'Comprehensive study of poet Dinakrishna\'s contribution to Odia literature.',
     link: '#'
   },
 ]
@@ -705,11 +747,11 @@ export default function Home() {
                     <MapPin className="text-primary" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-charcoal mb-1">Office Address</h3>
+                    <h3 className="font-semibold text-charcoal mb-1">Address</h3>
                     <p className="text-gray-600">
-                      Department of Odia Literature<br />
-                      Ravenshaw University<br />
-                      Cuttack, Odisha 753003
+                      Kallola Kutira<br />
+                      Housing Board Colony<br />
+                      Dhenkanal, Odisha
                     </p>
                   </div>
                 </div>
@@ -722,22 +764,8 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-charcoal mb-1">Email</h3>
-                    <a href="mailto:dm.prusty@university.edu" className="text-gray-600 hover:text-primary transition-colors">
-                      dm.prusty@university.edu
-                    </a>
-                  </div>
-                </div>
-              </motion.div>
-
-              <motion.div variants={fadeInUp} className="glass rounded-2xl p-6 card-hover">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-accent/20 rounded-xl">
-                    <Phone className="text-accent-dark" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-charcoal mb-1">Phone</h3>
-                    <a href="tel:+919876543210" className="text-gray-600 hover:text-primary transition-colors">
-                      +91 98765 43210
+                    <a href="mailto:dmp8957@gmail.com" className="text-gray-600 hover:text-primary transition-colors">
+                      dmp8957@gmail.com
                     </a>
                   </div>
                 </div>
@@ -869,8 +897,8 @@ export default function Home() {
                 Feel free to reach out for academic collaborations, research inquiries, 
                 or speaking engagements.
               </p>
-              <a href="mailto:dm.prusty@university.edu" className="text-secondary hover:text-secondary-light transition-colors">
-                dm.prusty@university.edu
+              <a href="mailto:dmp8957@gmail.com" className="text-secondary hover:text-secondary-light transition-colors">
+                dmp8957@gmail.com
               </a>
             </div>
           </div>
